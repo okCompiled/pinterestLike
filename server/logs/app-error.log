@@ -58,3 +58,6 @@
 {"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mNo token provided\u001b[39m","timestamp":"2023-07-23 15:11:49"}
 {"level":"\u001b[31merror\u001b[39m","timestamp":"2023-07-24 18:56:04"}
 {"level":"\u001b[31merror\u001b[39m","timestamp":"2023-07-24 18:59:37"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mconnect ECONNREFUSED 127.0.0.1:27017\u001b[39m","timestamp":"2023-09-02 10:38:09"}
+{"level":"\u001b[31merror\u001b[39m","timestamp":"2023-09-02 11:00:10"}
+{"level":"\u001b[31merror\u001b[39m","timestamp":"2023-09-02 11:00:15"}

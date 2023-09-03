@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import withAuth from "../../hoc/withAuth";
+import axios from "../../utils/axios";
+import { toast } from "react-hot-toast";
 
 const Signup = () => {
   const [email, setEmail] = React.useState("");
@@ -11,12 +13,11 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
-      console.log({
-        email,
-        password,
-        firstName,
-        lastName,
+      const response = await axios.post("/auth/signup", {
+        email,password,firstName,lastName
       });
+      console.log(response.data);
+      toast.success("You are successfully registered!!");
     } catch (error) {
       console.log(error);
     }
